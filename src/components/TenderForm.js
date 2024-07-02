@@ -33,31 +33,26 @@ const TenderForm = () => {
     let valid = true;
     let newErrors = {};
 
-  
     if (!tender.name.trim()) {
       newErrors.name = "Tender Name is required";
       valid = false;
     }
 
-   
     if (!tender.description.trim()) {
       newErrors.description = "Tender Description is required";
       valid = false;
     }
 
-   
     if (!tender.starttime) {
       newErrors.starttime = "Start Date is required";
       valid = false;
     }
 
-  
     if (!tender.endtime) {
       newErrors.endtime = "End Date is required";
       valid = false;
     }
 
-  
     if (tender.bufferTime && isNaN(tender.bufferTime)) {
       newErrors.bufferTime = "Buffer Time must be a number";
       valid = false;
@@ -157,7 +152,7 @@ const TenderForm = () => {
               <input
                 type="text"
                 name="bufferTime"
-                placeholder="Buffer Time (days)"
+                placeholder="Buffer Time (minutes)"
                 value={tender.bufferTime}
                 onChange={handleChange}
                 className="tenderInput"
