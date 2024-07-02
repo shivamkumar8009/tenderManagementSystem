@@ -323,7 +323,7 @@ td {
 }
 .nav {
   display: flex;
-  height: 100px;
+  height: 78px;
   align-items: center;
   justify-content: center;
   background-color: #768ae4;
