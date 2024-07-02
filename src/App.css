@@ -220,7 +220,7 @@ td {
 }
 
 .tenderForm table {
-  width: 90%;
+  width: 100%;
 }
 .tenderForm tr:nth-child(even) {
   background-color: #eeecec;
@@ -242,7 +242,7 @@ td {
 }
 
 .tenderForm .tenderButton {
-  width: 10%;
+  width: 20%;
   padding: 10px;
   background-color: orange;
   color: white;
